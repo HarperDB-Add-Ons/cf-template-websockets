@@ -1,0 +1,13 @@
+{
+  "nats": {
+    "host": "localhost",
+    "port": 9940,
+    "user": "cluster_user",
+    "pass": "Abc1234!"
+  },
+  "certs": {
+    "configFile": "/home/harper/hdb/keys/privateKey.pem",
+    "certFile": "/home/harper/hdb/keys/certificate.pem",
+    "caFile": "/home/harper/hdb/keys/ca.pem"
+  }
+}

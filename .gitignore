@@ -1,0 +1,6 @@
+**/node_modules
+start-hdb.js
+client-1.js
+config.json
+create-insert.js
+.vscode

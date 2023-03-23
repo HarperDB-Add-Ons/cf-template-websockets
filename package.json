@@ -1,0 +1,18 @@
+{
+  "name": "cf-template-websockets",
+  "version": "1.0.0",
+  "description": "HarperDB Custom Function: WebSocket Subscription Service",
+  "author": "kevin@harperdb.io",
+  "type": "module",
+  "dependencies": {
+    "@fastify/websocket": "^7.1.2",
+    "axios": "^1.3.4",
+    "msgpackr": "1.8.2",
+    "nats": "2.11.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
