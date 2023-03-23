@@ -1,6 +1,6 @@
 # CF-Template-WebSockets
 
-[HarperDB's](https://www.harperdb.io/) WebSocket Custom Function to connect to the internal [NATS](https://nats.io/) stream and subscribe to realtime database transactions.
+[HarperDB's](https://www.harperdb.io/) WebSocket Custom Function to connect to the internal [NATS.io](https://nats.io/) stream and subscribe to real-time database transactions.
 
 ## Setup
 
