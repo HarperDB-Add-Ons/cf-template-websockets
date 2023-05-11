@@ -6,8 +6,8 @@
     "pass": "Abc1234!"
   },
   "certs": {
-    "configFile": "/home/harper/hdb/keys/privateKey.pem",
-    "certFile": "/home/harper/hdb/keys/certificate.pem",
-    "caFile": "/home/harper/hdb/keys/ca.pem"
+    "configFile": "/home/harperdb/hdb/keys/privateKey.pem",
+    "certFile": "/home/harperdb/hdb/keys/certificate.pem",
+    "caFile": "/home/harperdb/hdb/keys/ca.pem"
   }
 }

@@ -4,10 +4,11 @@
 
 ## Setup
 
-1. Clone this repo to the $hdb/custom_functions directory of your HarperDB instance.
-2. Copy config.json.example to config.json and update the params to match your environment (cert locations and cluster username)
-3. Run `npm install`
-4. Restart the CF
+1. Create a HarperDB Instance with Clustering Enabled
+2. Clone this repo to the $hdb/custom_functions directory of your HarperDB instance.
+3. Copy config.json.example to config.json and update the params to match your environment (cert locations and cluster username)
+4. Run `npm install`
+5. Restart the CF
 
 ## Schema
 
