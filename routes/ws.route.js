@@ -15,13 +15,26 @@ export default async (server, { hdbCore, logger }) => {
   await server.register(fastifyWebsocket);
   server.get("/", { websocket: true }, (connection) => {
     const connection_subscriptions = [];
-    connection.socket.on("message", (data) => {
+    connection.socket.on("message", async (data) => {
       const message = JSON.parse(data);
       if (message.action === "subscribe") {
         const { schema, table, id } = message;
         const key = `${schema}.${table}`;
         connection_subscriptions.push([key, id, onPublishedMessage]);
         subscribe(nats_connection, hdbCore, key, id, onPublishedMessage);
+      }
+      if (message.action === "insert") {
+        await hdbCore.requestWithoutAuthentication({
+          body: {
+            operation: "insert",
+            records: [
+              {
+                clientID,
+                action,
+              },
+            ],
+          },
+        });
       }
     });
     function onPublishedMessage(message) {
