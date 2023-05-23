@@ -1,15 +1,17 @@
 import fastifyWebsocket from "@fastify/websocket";
-import {
-  getNatsConnection,
-  startSubscription,
-} from "../helpers/nats.helper.js";
-import { config } from "../helpers/config.helper.js";
+import { getNatsConnection, startSubscription } from "../helpers/natsHelper.js";
+import { config } from "../helpers/configHelper.js";
 
 const subscriptions = new Map();
 
 export default async (server, { hdbCore, logger }) => {
   // connect to nats
   const nats_connection = await getNatsConnection(config, logger);
+  server.get("/hello", {
+    handler: async (request, reply) => {
+      return "hi";
+    },
+  });
 
   // websocket server
   await server.register(fastifyWebsocket);
