@@ -16,7 +16,7 @@ Ensure that the database schema and tables are created before subscribing to a s
 
 ## Subscribe
 
-1. Connect to the WebSocket server running at $hdb_cf_host/cf-template-websockets (by default this would be http://localhost:9926/cf-template-websockets if it's running locally)
+1. Connect to the WebSocket server running at $hdb_cf_host/cf-template-websockets (by default this would be ws://localhost:9926/cf-template-websockets if it's running locally)
 2. Subscribe to a stream with a message like:
 
 ```
