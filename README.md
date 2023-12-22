@@ -1,5 +1,7 @@
 # CF-Template-WebSockets
 
+This project is built on specific internal APIs in HarperDB 4.0/4.1 as a demonstration of real-time capabilities, but is _NOT_ compatible with HarperDB 4.2+, which has [native real-time capabilities](https://docs.harperdb.io/docs/developers/real-time) that should be used instead of project. Please use visit the [real-time documentation](https://docs.harperdb.io/docs/developers/real-time) for how to use real-time capabilities like WebSockets, SSE, and MQTT.
+
 [HarperDB's](https://www.harperdb.io/) WebSocket Custom Function to connect to the internal [NATS.io](https://nats.io/) stream and subscribe to real-time database transactions.
 
 ## Setup
