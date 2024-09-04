@@ -1,6 +1,6 @@
 # Deprecated <br>[![deprecated](http://badges.github.io/stability-badges/dist/deprecated.svg)](http://github.com/badges/stability-badges)
 
-This project is deprecated/obsolete. Please see https://docs.harperdb.io/docs/developers/real-time#websockets for information on how to use HarperDB's native support for websockets.
+**This project is deprecated/obsolete. Please see https://docs.harperdb.io/docs/developers/real-time#websockets for information on how to use HarperDB's native support for websockets.**
 
 
 
