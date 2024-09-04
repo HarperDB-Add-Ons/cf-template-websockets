@@ -1,3 +1,9 @@
+# Deprecated <br>[![deprecated](http://badges.github.io/stability-badges/dist/deprecated.svg)](http://github.com/badges/stability-badges)
+
+This project is deprecated/obsolete. Please see https://docs.harperdb.io/docs/developers/real-time#websockets for information on how to use HarperDB's native support for websockets.
+
+
+
 # CF-Template-WebSockets
 
 This project is built on specific internal APIs in HarperDB 4.0/4.1 as a demonstration of real-time capabilities, but is _NOT_ compatible with HarperDB 4.2+, which has [native real-time capabilities](https://docs.harperdb.io/docs/developers/real-time) that should be used instead of project. Please use visit the [real-time documentation](https://docs.harperdb.io/docs/developers/real-time) for how to use real-time capabilities like WebSockets, SSE, and MQTT.
